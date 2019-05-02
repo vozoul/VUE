@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <router-link to="/" tag="button">Accueil</router-link>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <router-link to="/supplier" tag="button">liste des fournisseurs</router-link>
-    <router-link to="/map" tag="button">Localisation fournisseurs</router-link>
+    <div id="header">
+      <router-link to="/" tag="button">Accueil</router-link>
+      <img alt="Vue logo" src="./assets/logo.png">
+      <router-link to="/supplier" tag="button">liste des fournisseurs</router-link>
+      <router-link to="/map" tag="button">Localisation fournisseurs</router-link>
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -22,6 +24,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
+  #header {
+    background: #bababa;
+    box-shadow: 0 0 15px #0f0f0f;
+  }
 </style>

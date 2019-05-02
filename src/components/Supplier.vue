@@ -1,9 +1,11 @@
 <template>
     <div>
-        <h1>Fournisseur : {{ name }}</h1>
-        <h5 v-if="status" :class="'green'">A du stock: OK</h5>
-        <h5 v-else :class="'red'">A du stock: KO</h5>
-        <h3>Date de la derniere levée: {{ checkedAt }}</h3>
+        <div class="card">
+            <h3 class="card-header">Fournisseur : {{ name }}</h3>
+            <h6 v-if="status" :class="'green'">A du stock: OK</h6>
+            <h6 v-else :class="'red'">A du stock: KO</h6>
+            <h5>Date de la derniere levée: {{ checkedAt }}</h5>
+        </div>
     </div>
 </template>
 
