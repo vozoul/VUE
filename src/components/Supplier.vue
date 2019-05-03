@@ -12,11 +12,16 @@
 <script>
     export default {
         name: "Supplier",
+
         props:{
             id: Number,
             name: String,
             status: Boolean,
             checkedAt: String,
+            lat: Number,
+            lng: Number,
+            createdAt: String,
+            updatedAt: String,
         }
     }
 </script>

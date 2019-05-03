@@ -10,6 +10,7 @@
 
 <script>
     import Supplier from './Supplier'
+    import SuppliersMap from './SuppliersMaps'
     import {format, render, cancel, register} from 'timeago.js'
 
     export default {
@@ -22,8 +23,8 @@
                     "name": "google",
                     "checkedAt": format("2010-01-01T00:00:00.000Z"),
                     "status": true,
-                    "latitude": "12",
-                    "longitude": "12",
+                        "lat": "12",
+                        "lng": "12",
                     "createdAt": "2019-05-02T09:07:12.900Z",
                     "updatedAt": "2019-05-02T09:07:12.900Z"
                 }, {
@@ -31,8 +32,8 @@
                     "name": "Kacie.Weber12",
                     "checkedAt": format("2019-03-25T02:21:10.715Z"),
                     "status": true,
-                    "latitude": "86.2334",
-                    "longitude": "-171.2672",
+                        "lat": "86.2334",
+                        "lng": "-171.2672",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -40,8 +41,8 @@
                     "name": "Raheem50",
                     "checkedAt": format("2019-03-25T05:26:16.613Z"),
                     "status": false,
-                    "latitude": "31.9139",
-                    "longitude": "58.3804",
+                        "lat": "31.9139",
+                        "lng": "58.3804",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -49,8 +50,8 @@
                     "name": "Frank44",
                     "checkedAt": format("2019-03-25T13:25:15.187Z"),
                     "status": false,
-                    "latitude": "50.8967",
-                    "longitude": "-165.1583",
+                        "lat": "50.8967",
+                        "lng": "-165.1583",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -58,8 +59,8 @@
                     "name": "Devin60",
                     "checkedAt": format("2019-03-24T14:05:49.199Z"),
                     "status": true,
-                    "latitude": "32.0716",
-                    "longitude": "-75.7375",
+                        "lat": "32.0716",
+                        "lng": "-75.7375",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -67,8 +68,8 @@
                     "name": "Rick_Mueller6",
                     "checkedAt": format("2019-03-25T08:39:38.027Z"),
                     "status": true,
-                    "latitude": "39.1227",
-                    "longitude": "-37.0041",
+                        "lat": "39.1227",
+                        "lng": "-37.0041",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -76,8 +77,8 @@
                     "name": "Kimberly_Braun",
                     "checkedAt": format("2019-03-24T13:51:55.232Z"),
                     "status": false,
-                    "latitude": "-80.7349",
-                    "longitude": "6.4900",
+                        "lat": "-80.7349",
+                        "lng": "6.4900",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -85,8 +86,8 @@
                     "name": "Angel_Stroman",
                     "checkedAt": format("2019-03-24T23:36:41.180Z"),
                     "status": false,
-                    "latitude": "-87.0271",
-                    "longitude": "162.8048",
+                    "lat": "-87.0271",
+                    "lng": "162.8048",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -94,8 +95,8 @@
                     "name": "Xander_Hammes",
                     "checkedAt": format("2019-03-24T20:36:28.951Z"),
                     "status": false,
-                    "latitude": "-76.9160",
-                    "longitude": "-115.6229",
+                        "lat": "-76.9160",
+                        "lng": "-115.6229",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -103,8 +104,8 @@
                     "name": "Jevon_Reinger",
                     "checkedAt": format("2019-03-24T20:04:03.176Z"),
                     "status": true,
-                    "latitude": "42.6313",
-                    "longitude": "-130.5931",
+                        "lat": "42.6313",
+                        "lng": "-130.5931",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -112,8 +113,8 @@
                     "name": "Myles49",
                     "checkedAt": format("2019-03-24T19:26:29.353Z"),
                     "status": true,
-                    "latitude": "14.7380",
-                    "longitude": "-157.6766",
+                        "lat": "14.7380",
+                        "lng": "-157.6766",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -121,8 +122,8 @@
                     "name": "Narciso84",
                     "checkedAt": format("2019-03-24T21:56:37.782Z"),
                     "status": false,
-                    "latitude": "-12.6340",
-                    "longitude": "-125.5771",
+                        "lat": "-12.6340",
+                        "lng": "-125.5771",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -130,8 +131,8 @@
                     "name": "Rosella.Kilback22",
                     "checkedAt": format("2019-03-24T18:57:25.990Z"),
                     "status": false,
-                    "latitude": "37.8824",
-                    "longitude": "38.4061",
+                        "lat": "37.8824",
+                        "lng": "38.4061",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -139,8 +140,8 @@
                     "name": "Sammie46",
                     "checkedAt": format("2019-03-25T11:29:05.318Z"),
                     "status": false,
-                    "latitude": "-9.0155",
-                    "longitude": "34.6593",
+                        "lat": "-9.0155",
+                        "lng": "34.6593",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -148,8 +149,8 @@
                     "name": "Selena.Schulist67",
                     "checkedAt": format("2019-03-24T16:43:14.800Z"),
                     "status": true,
-                    "latitude": "-81.2406",
-                    "longitude": "130.6475",
+                        "lat": "-81.2406",
+                        "lng": "130.6475",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -157,8 +158,8 @@
                     "name": "Riley.Mertz91",
                     "checkedAt": format("2019-03-24T14:37:53.590Z"),
                     "status": false,
-                    "latitude": "89.2406",
-                    "longitude": "-90.2223",
+                        "lat": "89.2406",
+                        "lng": "-90.2223",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -166,8 +167,8 @@
                     "name": "Lelah.Wilkinson84",
                     "checkedAt": format("2019-03-25T02:10:03.858Z"),
                     "status": false,
-                    "latitude": "28.7837",
-                    "longitude": "50.2252",
+                        "lat": "28.7837",
+                        "lng": "50.2252",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -175,8 +176,8 @@
                     "name": "Gabriel_Auer68",
                     "checkedAt": format("2019-03-24T17:07:59.324Z"),
                     "status": true,
-                    "latitude": "75.6639",
-                    "longitude": "60.8417",
+                        "lat": "75.6639",
+                        "lng": "60.8417",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -184,8 +185,8 @@
                     "name": "Constantin48",
                     "checkedAt": format("2019-03-25T04:51:45.682Z"),
                     "status": true,
-                    "latitude": "79.0579",
-                    "longitude": "-25.4273",
+                        "lat": "79.0579",
+                        "lng": "-25.4273",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -193,8 +194,8 @@
                     "name": "Wayne.Bahringer",
                     "checkedAt": format("2019-03-25T09:52:20.593Z"),
                     "status": false,
-                    "latitude": "27.5138",
-                    "longitude": "-96.3962",
+                        "lat": "27.5138",
+                        "lng": "-96.3962",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -202,8 +203,10 @@
                     "name": "Joelle77",
                     "checkedAt": format("2019-03-25T12:56:17.996Z"),
                     "status": true,
-                    "latitude": "85.6310",
-                    "longitude": "24.0997",
+                    "position": {
+                        "lat": "85.6310",
+                        "lng": "24.0997",
+                    },
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -211,8 +214,8 @@
                     "name": "Consuelo52",
                     "checkedAt": format("2019-03-24T15:09:03.749Z"),
                     "status": true,
-                    "latitude": "66.5314",
-                    "longitude": "-172.7635",
+                        "lat": "66.5314",
+                        "lng": "-172.7635",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -220,8 +223,8 @@
                     "name": "Brook.Wisoky13",
                     "checkedAt": format("2019-03-25T02:54:34.926Z"),
                     "status": false,
-                    "latitude": "30.9653",
-                    "longitude": "-168.4138",
+                        "lat": "30.9653",
+                        "lng": "-168.4138",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -229,8 +232,10 @@
                     "name": "Ansley76",
                     "checkedAt": format("2019-03-25T08:20:15.935Z"),
                     "status": true,
-                    "latitude": "34.0245",
-                    "longitude": "-171.7291",
+                    "position": {
+                        "lat": "34.0245",
+                        "lng": "-171.7291",
+                    },
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -238,8 +243,8 @@
                     "name": "Ryley32",
                     "checkedAt": format("2019-03-24T14:08:53.572Z"),
                     "status": true,
-                    "latitude": "-84.9379",
-                    "longitude": "-45.0320",
+                        "lat": "-84.9379",
+                        "lng": "-45.0320",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -247,8 +252,8 @@
                     "name": "Destiny_Kunze1",
                     "checkedAt": format("2019-03-25T00:59:19.627Z"),
                     "status": true,
-                    "latitude": "1.2619",
-                    "longitude": "-124.8092",
+                        "lat": "1.2619",
+                        "lng": "-124.8092",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -256,8 +261,8 @@
                     "name": "Lorenza.Pollich",
                     "checkedAt": format("2019-03-25T04:40:22.321Z"),
                     "status": false,
-                    "latitude": "33.8417",
-                    "longitude": "34.3022",
+                    "lat": "33.8417",
+                    "lng": "34.3022",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }, {
@@ -274,8 +279,8 @@
                     "name": "Scarlett.Nienow",
                     "checkedAt": format("2019-03-24T21:06:06.715Z"),
                     "status": true,
-                    "latitude": "-68.7419",
-                    "longitude": "-166.6099",
+                    "lat": "-68.7419",
+                    "lng": "-166.6099",
                     "createdAt": "2019-03-25T13:30:44.000Z",
                     "updatedAt": "2019-03-25T13:30:44.000Z"
                 }]

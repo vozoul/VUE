@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <div id="header">
-      <router-link to="/" tag="button">Accueil</router-link>
-      <img alt="Vue logo" src="./assets/logo.png">
-      <router-link to="/supplier" tag="button">liste des fournisseurs</router-link>
-      <router-link to="/map" tag="button">Localisation fournisseurs</router-link>
-    </div>
-    <router-view></router-view>
+    <!--<div>-->
+      <!--<router-link to="/" tag="button">Accueil</router-link>-->
+      <!--<img alt="Vue logo" src="./assets/logo.png">-->
+      <!--<router-link to="/supplier" tag="button">liste des fournisseurs</router-link>-->
+      <!--<router-link to="/map" tag="button">Localisation fournisseurs</router-link>-->
+    <!--</div>-->
+    <img alt="Vue logo" src="./assets/logo.png">
+    <hello first-name="Vince" from="Madrid" image="img/logo.png" last-name="VDK"></hello>
+    <!--<router-view></router-view>-->
   </div>
 </template>
 
 <script>
+  import Hello from './Hello'
 
 export default {
-  name: 'app'
+  name: 'app',
+  components:{
+    Hello
+  }
 }
 </script>
 

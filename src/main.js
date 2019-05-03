@@ -1,4 +1,6 @@
+import '@babel/polyfill'
 import Vue from 'vue'
+import './plugins/bootstrap-vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
